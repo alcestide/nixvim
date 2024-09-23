@@ -1,10 +1,12 @@
 {
 
   imports = [ 
-		./keymaps.nix
-		./options.nix
+
         ./common.nix
+		./options.nix
+		./keymaps.nix
         ./plugins/neotree.nix
+        ./plugins/lsp.nix
 ];
 
 # Catppuccin
