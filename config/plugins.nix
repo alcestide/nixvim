@@ -1,14 +1,15 @@
-{pkgs, ...}: {
+{
   plugins = {
+
+    nix = {
+      enable = true;
+    };
+
     bufferline = {
       enable = true;
     };
 
     lualine = {
-      enable = true;
-    };
-
-    oil = {
       enable = true;
     };
 
@@ -20,11 +21,9 @@
       enable = true;
     };
 
-
     nvim-autopairs = {
       enable = true;
     };
-
 
     notify = {
       enable = true;
@@ -69,7 +68,6 @@
       };
     };
 
-
     toggleterm = {
       enable = true;
       settings = {
@@ -103,29 +101,7 @@
       };
     };
 
-    neo-tree = {
-      enable = true;
-      enableDiagnostics = true;
-      enableGitStatus = true;
-      enableModifiedMarkers = true;
-      enableRefreshOnWrite = true;
-      closeIfLastWindow = true;
-      popupBorderStyle = "rounded"; # Type: null or one of “NC”, “double”, “none”, “rounded”, “shadow”, “single”, “solid” or raw lua code
-      buffers = {
-        bindToCwd = false;
-        followCurrentFile = {
-          enabled = true;
-        };
-      };
-      window = {
-        width = 40;
-        height = 15;
-        autoExpandWidth = false;
-        mappings = {
-          "<space>" = "none";
-        };
-      };
-    };
+
 
     undotree = {
       enable = true;
@@ -147,9 +123,7 @@
       ];
     };
 
-    nix = {
-      enable = true;
-    };
+
 
     lsp = {
       enable = true;
@@ -190,56 +164,7 @@
 
   };
 
-  # Catppuccin Configuration 
 
-    colorschemes.catppuccin = {
-    enable = true;
-    settings = {
-      no_bold = false;
-      no_italic = false;
-      no_underline = false;
-      transparent_background = true;
-      integrations = {
-        cmp = true;
-        noice = true;
-        notify = true;
-        neotree = true;
-        harpoon = true;
-        gitsigns = true;
-        which_key = true;
-        illuminate.enabled = true;
-        treesitter = true;
-        treesitter_context = true;
-        telescope.enabled = true;
-        indent_blankline.enabled = true;
-        mini.enabled = true;
-        native_lsp = {
-          enabled = true;
-          inlay_hints = {
-            background = true;
-          };
-          underlines = {
-            errors = ["underline"];
-            hints = ["underline"];
-            information = ["underline"];
-            warnings = ["underline"];
-          };
-        };
-      };
-    };
-  };
-
-
-  extraPlugins = with pkgs.vimPlugins;
-    [
-      vim-be-good
-      headlines-nvim 
-      nvim-web-devicons 
-      friendly-snippets 
-      glow-nvim 
-      ultisnips
-      clipboard-image-nvim
-    ];
 
 }
 
