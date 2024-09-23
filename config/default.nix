@@ -2,9 +2,9 @@
 
   imports = [ 
 		./keymaps.nix
-		./opts.nix
-        ./plugins.nix
-        ./neotree.nix
+		./options.nix
+        ./common.nix
+        ./plugins/neotree.nix
 ];
 
 # Catppuccin
