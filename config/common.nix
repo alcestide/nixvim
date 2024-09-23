@@ -34,43 +34,11 @@
       backgroundColour = "#1e1e2e";
       fps = 144;
       render = "default";
-      timeout = 100;
+      timeout = 10;
       topDown = true;
     };
 
     persistence.enable = true;
-
-    dap = {
-      enable = true;
-      signs = {
-        dapBreakpoint = {
-          text = "●";
-          texthl = "DapBreakpoint";
-        };
-        dapBreakpointCondition = {
-          text = "●";
-          texthl = "DapBreakpointCondition";
-        };
-        dapLogPoint = {
-          text = "◆";
-          texthl = "DapLogPoint";
-        };
-      };
-      extensions = {
-        dap-python = {
-          enable = true;
-        };
-        dap-ui = {
-          enable = true;
-          floating.mappings = {
-            close = ["<ESC>" "q"];
-          };
-        };
-        dap-virtual-text = {
-          enable = true;
-        };
-      };
-    };
 
     toggleterm = {
       enable = true;
@@ -105,8 +73,6 @@
       };
     };
 
-
-
     undotree = {
       enable = true;
       settings = {
@@ -126,9 +92,6 @@
         "reason"
       ];
     };
-
-
-
 
     alpha = {
       enable = true;
