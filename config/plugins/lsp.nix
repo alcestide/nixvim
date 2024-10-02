@@ -2,7 +2,7 @@
   plugins.lsp = {
       enable = true;
       servers = {
-        ts-ls.enable = true; # TS/JS
+        #ts-ls.enable = true; # TS/JS
         cssls.enable = true; # CSS
         tailwindcss.enable = true; # TailwindCSS
         html.enable = true; # HTML
@@ -25,9 +25,24 @@
         # Rust
         rust-analyzer = {
           enable = true;
-          installRustc = true;
-          installCargo = true;
+          installRustc = false;
+          installCargo = false;
+          settings = {
+            completion.fullFunctionSignatures.enable = true;
+            checkOnSave = true;
+            check = {command = "clippy";};
+            procMacro = {enable = true;};
+            lens = {
+              implementations.enable = true;
+              references = {
+                method.enable = true;
+                adt.enable = true;
+                trait.enable = true;
+                enumVariant.enable = true;
+              };
         };
       };
     };
-  }
+  };
+};
+}
