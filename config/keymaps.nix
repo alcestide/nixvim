@@ -1,9 +1,5 @@
 {self, ...}: {
   keymaps = [
-    {
-      action = "<cmd>Neotree toggle<CR>";
-      key = "<leader>e";
-    }
 
     {
       action = "<cmd>Telescope find_files<CR>";
@@ -15,33 +11,46 @@
     }
     
     {
-      action = "<cmd>Telescope colorscheme<CR>";
-      key = "<leader>ch";
+      action = "<cmd>FzfLua buffers<CR>";
+      key = "<leader>fb";
+    }
+
+    {
+      action = "<cmd>Telescope oldfiles<CR>";
+      key = "<leader>fh";
+    }
+
+    {
+      action = "<cmd>Telescope builtin<CR>";
+      key = "<leader>fz";
     }
     {
-      action = "<cmd>Telescope man_pages<CR>";
-      key = "<leader>fm";
+      action = "<cmd>UndotreeToggle<CR>";
+      key = "<F5>";
+    } 
+    {
+      action = "<cmd>Oil<CR>";
+      key = "<C-n>";
     }
+    {
+      action = "<cmd>Oil<CR>";
+      key = "<leader>e";
+    }
+
+    {
+
+      action = "<cmd>:lua require('neoscroll').scroll(-vim.wo.scroll,true,300)<CR>";
+      key = "<C-a>";
+    }
+
     {
       action = "<cmd>:lua vim.lsp.buf.hover()<CR>";
       key = "K";
     }
-    {
-      mode = "n";
-      key = "<Tab>";
-      action = "<cmd>BufferLineCycleNext<cr>";
-      options = {
-        desc = "Cycle to next buffer";
-      };
-    }
 
     {
-      mode = "n";
-      key = "<S-Tab>";
-      action = "<cmd>BufferLineCyclePrev<cr>";
-      options = {
-        desc = "Cycle to previous buffer";
-      };
+      action = "<cmd>:lua vim.lsp.buf.definition()<CR>";
+      key = "fd";
     }
 
     {

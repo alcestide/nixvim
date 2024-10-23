@@ -5,15 +5,15 @@
       enable = true;
     };
 
-    bufferline = {
-      enable = true;
-    };
-
     lualine = {
       enable = true;
     };
 
     neoscroll = {
+      enable = true;
+    };
+
+    oil = {
       enable = true;
     };
 
@@ -25,53 +25,34 @@
       enable = true;
     };
 
-    notify = {
+    spectre = {
       enable = true;
-      backgroundColour = "#1e1e2e";
-      fps = 144;
-      render = "default";
-      timeout = 10;
-      topDown = true;
     };
 
-    persistence.enable = true;
-
-    toggleterm = {
+    leap = {
       enable = true;
-      settings = {
-        hide_numbers = false;
-        autochdir = true;
-        close_on_exit = true;
-        direction = "vertical";
-      };
     };
 
-    gitsigns = {
-      enable = true;
-      settings.current_line_blame = true;
-    };
-
-    markdown-preview = {
-      enable = true;
-      settings.theme = "dark";
-    };
-
-    noice = {
+    fzf-lua = {
       enable = true;
     };
 
     telescope = {
       enable = true;
-      extensions = {
-        fzf-native = {
-          enable = true;
-        };
-      };
+    };
+
+    persistence.enable = true;
+
+    gitsigns = {
+      enable = true;
+      settings.current_line_blame = true;
+      settings.attach_to_untracked = false;
     };
 
     which-key = {
       enable = true;
     };
+
     undotree = {
       enable = true;
       settings = {
@@ -97,8 +78,5 @@
     };
 
   };
-
-
-
 }
 
