@@ -49,6 +49,10 @@
       settings.attach_to_untracked = false;
     };
 
+    neogit = {
+      enable = true;
+    };
+
     which-key = {
       enable = true;
     };
