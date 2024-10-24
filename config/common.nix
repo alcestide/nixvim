@@ -9,6 +9,14 @@
       enable = true;
     };
 
+    cmp_luasnip = {
+      enable = true;
+    };
+
+    luasnip = {
+      enable = true;
+    };
+
     neoscroll = {
       enable = true;
     };

@@ -20,6 +20,7 @@
     ruler = true;
     gdefault = true;
     scrolloff = 5;
+    autochdir=true;
   };
 
   localOpts = {
@@ -41,7 +42,10 @@
     ruler = true;
     gdefault = true;
     scrolloff = 5;
+    autochdir=true;
   };
+
+
 
   highlight = {
     Comment.fg = "#ff00ff";

@@ -27,6 +27,10 @@
     {
       action = "<cmd>UndotreeToggle<CR>";
       key = "<F5>";
+    }
+    {
+      action = "<cmd>Neotree toggle<CR>";
+      key = "<leader>t";
     } 
     {
       action = "<cmd>Oil<CR>";
@@ -35,6 +39,10 @@
     {
       action = "<cmd>Oil<CR>";
       key = "<leader>e";
+    }
+    {
+      action = "<cmd>Neogit<CR>";
+      key = "<leader>g";
     }
 
     {
