@@ -11,13 +11,30 @@ git clone https://github.com/alcestide/nixvim
 ``` 
 and then run `nix run .` inside the cloned directory.
 
-![image](https://github.com/user-attachments/assets/44ff2d6c-664c-4942-9216-7c4400f2c7a5)
+![Screenshot_20241027-125629](https://github.com/user-attachments/assets/820ff294-83c8-40bd-ab6f-7e0957c62517)
+
+![Screenshot_20241027-125520](https://github.com/user-attachments/assets/3dffd9d7-f9fa-402f-bb48-312bf88d5090)
+
+![Screenshot_20241027-125535](https://github.com/user-attachments/assets/610fd68e-aacb-4dc9-9e44-59c590401ba1)
 
 ## Installation
+To make this configuration **persistent**, you can either use **flakes** (easier) or the **standalone** method. Here’s how:
 
-To make this configuration **persistent**, you can **modify** your `configuration.nix` file. Here’s how:
+### Flakes
+- In your **flake.nix**, create inside `inputs`:
+```nix
+    nixvim = {
+      url = "github:alcestide/nixvim";
+    };
+```
+Then simply add it to your **packages** like this:
+```nix
+    inputs.nixvim.packages."x86_64-linux".default
+```
 
-- **Create** a **variable** for your Nixvim **config** **directory** (I put it inside the **same** directory of `configuration.nix`).
+### Standalone
+
+- **Create** a **variable** for your Nixvim **config** **directory** (I put mine inside the **same** directory of `configuration.nix`).
 - **Create** another **variable** and assign to it `nixvim.legacyPackages."${pkgs.stdenv.hostPlatform.system}"` (in this case the variable is named "**alknix**", but you can call it as you like).
 - Pass the Nixvim **config** as a **module** to the `makeNixvimWithModule` function as shown below:
 ```nix
