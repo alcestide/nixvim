@@ -56,6 +56,8 @@
       settings.current_line_blame = true;
       settings.attach_to_untracked = false;
     };
+    
+    web-devicons.enable = true;
 
     neogit = {
       enable = true;
