@@ -1,4 +1,10 @@
 # ALK's Nixvim Configuration
+[![License](https://img.shields.io/github/license/alcestide/nixvim)](https://en.wikipedia.org/wiki/Unlicense)
+[![Written in Nix](https://img.shields.io/badge/code-nix-blue)](https://nixos.org/)
+[![NixOS Unstable](https://img.shields.io/badge/NixOS-24.05-blue.svg?style=flat-square&logo=NixOS&logoColor=white)](https://nixos.org)
+[![GitHub last commit](https://img.shields.io/github/last-commit/alcestide/nixvim)](#)
+[![Free](https://img.shields.io/badge/free_for_non_commercial_use-brightgreen)](#-license)
+---
 ## Testing
 
 You can **try out** my configuration by running the **following** **command** in your **shell**:
