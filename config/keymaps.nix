@@ -44,10 +44,9 @@
       action = "<cmd>Neogit<CR>";
       key = "<leader>g";
     }
-
     {
 
-      action = "<cmd>:lua require('neoscroll').scroll(-vim.wo.scroll,true,300)<CR>";
+      action = "<cmd>:lua require('neoscroll').scroll(-vim.wo.scroll, {move_cursor=true, duration=300})<CR>";
       key = "<C-a>";
     }
 
