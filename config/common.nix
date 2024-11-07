@@ -41,10 +41,6 @@
       enable = true;
     };
 
-    fzf-lua = {
-      enable = true;
-    };
-
     telescope = {
       enable = true;
     };

@@ -11,7 +11,7 @@
     }
     
     {
-      action = "<cmd>FzfLua buffers<CR>";
+      action = "<cmd>Telescope buffers<CR>";
       key = "<leader>fb";
     }
 
