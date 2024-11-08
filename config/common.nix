@@ -52,7 +52,7 @@
       settings.current_line_blame = true;
       settings.attach_to_untracked = false;
     };
-    
+
     web-devicons.enable = true;
 
     neogit = {
@@ -85,6 +85,28 @@
     alpha = {
       enable = true;
       theme = "dashboard";
+    };
+
+    mini = {
+      enable = true;
+      mockDevIcons = true;
+      modules = {
+        icons = {
+          style = "glyph";
+        };
+        align = {};
+        trailspace = {};
+        move = {
+          mappings = {
+            left = "<M-h>";
+            right = "<M-l>";
+            down = "<M-j>";
+            up = "<M-k>";
+          };
+        };
+        misc = {};
+        trailspace = {};
+      };
     };
 
   };
