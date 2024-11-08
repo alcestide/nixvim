@@ -9,7 +9,7 @@
       action = "<cmd>Telescope live_grep<CR>";
       key = "<leader>fg";
     }
-    
+
     {
       action = "<cmd>Telescope buffers<CR>";
       key = "<leader>fb";
