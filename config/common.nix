@@ -1,6 +1,5 @@
 {
   plugins = {
-
     nix = {
       enable = true;
     };
@@ -44,6 +43,8 @@
     telescope = {
       enable = true;
     };
+
+    render-markdown.enable = true;
 
     persistence.enable = true;
 
